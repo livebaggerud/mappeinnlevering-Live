@@ -8,6 +8,8 @@ UML diagrammer brukes når man skal lage større eller mindre prosjekter med obj
 ## Flyt skjema
 Flyt skjema er et verktøy som brukes for å planlegge programmer. Det gjør det lettere å vite hva man ønske å få som utput av ulike tilfeller i programmet.
 
+I et flyt diagram viser diamanter valg progamet står ovenfor, og firkantene hvis hva som skjer. Pilene viser utfallet av valget, og hvor i programmet det fører oss.
+
 [flyt.vaer.py](flyt-vaer.py)
 ![](flyt-vaer.png)
 
