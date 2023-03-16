@@ -11,10 +11,10 @@
     - Alternativ løsniger
     - Objekt orenterte progranner ned klasser, arv og objekter
 - Modellering og representasjon
-    - Objektorenterte modeller som beskriver programstruktur (UML)
+    - [Objektorenterte modeller som beskriver programstruktur (UML)](./modellering_og_representasjon/objektorinentert.md)
     - Represtasjon av programflyt med kontrollstryktyrer (flyt diagrammer)
 - Implementering
     - Løsniger med programmering
     - Gjenbrukbar kode
-    - Innhente, annalysere og presentere data
+    - [Innhente, annalysere og presentere data](./implimentering/presenteredata.md)
     - [Vern mot kjøretidsfeil og logiske feil i programmer](./implimentering/feilhaandtering.md)
