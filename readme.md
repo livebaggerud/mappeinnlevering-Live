@@ -12,7 +12,7 @@
     - Objekt orenterte progranner ned klasser, arv og objekter
 - Modellering og representasjon
     - [Objektorenterte modeller som beskriver programstruktur (UML)](./modellering_og_representasjon/objektorinentert.md)
-    - Represtasjon av programflyt med kontrollstryktyrer (flyt diagrammer)
+    - [Represtasjon av programflyt med kontrollstruktur (flyt diagrammer)](./modellering_og_representasjon/objektorinentert.md)
     - Brukervennlighet i programmer
 - Implementering
     - Løsniger med programmering
