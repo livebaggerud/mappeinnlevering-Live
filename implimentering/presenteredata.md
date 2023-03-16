@@ -9,3 +9,5 @@ For å tegne grafer i Python kan vi bruke bibloteket `matplotlib`
 > installere matplotlib: `pip3 install matplotlib`
 
 ## Lage nettsider (HTML/flask)
+
+
