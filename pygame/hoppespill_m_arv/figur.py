@@ -43,7 +43,12 @@ pg.init()
 screen = pg.display.set_mode((1280, 720))
 clock = pg.time.Clock()
 running = True
-spiller = Spiller(1280, 720, 50)
+spiller = Spiller(30, 650, 50)
+hindere = []
+
+for i in range(3):
+    nytt_hinder = Hinder(90,90,90)
+    hindere.append(nytt_hinder)
 
 while running:
     # poll for events
@@ -52,8 +57,15 @@ while running:
         if event.type == pg.QUIT:
             running = False
 
+    spiller.tegn(screen)
+
+    for hinder in hindere:
+        hinder.tegn(screen)
+        hinder.flytt_venstre()
+        
+
     # fill the screen with a color to wipe away anything from last frame
-    screen.fill("purple")
+    #screen.fill("purple")
 
     # LAG SPILLET DIT HER:
 
