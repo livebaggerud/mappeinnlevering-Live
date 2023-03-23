@@ -11,5 +11,6 @@ Arv brukes for å bygge vidre på eksisterende klasser.
 
 ### Eksempler på bruk av arv
 [Eksempel på arv](/Problemlosnig/arv_eksempel/skolesystem.py)
+[Pygame med arv](../pygame/hoppespill_m_arv/figur.py)
 
 ## Objekter

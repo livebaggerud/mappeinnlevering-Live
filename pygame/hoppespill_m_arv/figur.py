@@ -11,9 +11,9 @@ class Hinder(Figur):
     def __init__(self, x, y, fartY):
         super().__init__(x, y)
         self._fartY = fartY
-        self._hoyde = randint(20,100)
+        self._hoyde = randint(50,120)
         self._y = 720 - self._hoyde
-        self._bredde = 10
+        self._bredde = 25
     
     def tegn(self, vindu):
         pg.draw.rect(vindu, (3,67,86), (self._x, self._y, self._bredde, self._hoyde))
@@ -33,7 +33,8 @@ class Spiller(Figur):
         self._y -= 5
 
     def fall(self):
-        self._y += 1
+        self._y += 0.5
+        
 
     def er_over_hinder(self):
         pass
@@ -47,9 +48,11 @@ running = True
 spiller = Spiller(30, 650, 50)
 hindere = []
 
-for i in range(3):
+for i in range(100):
     nytt_hinder = Hinder(1200,650,90)
     hindere.append(nytt_hinder)
+
+frame = 0
 
 while running:
     # poll for events
@@ -58,6 +61,10 @@ while running:
         if event.type == pg.QUIT:
             running = False
 
+    if frame == 400:
+        frame = 0
+        nytt_hinder = Hinder(1200, 650, 90)
+        hindere.append(nytt_hinder)
 
     # fill the screen with a color to wipe away anything from last frame
     screen.fill("purple")
@@ -79,6 +86,7 @@ while running:
     
     spiller.fall()
     
+    frame += 1
     # flip() the display to put your work on screen
     pg.display.flip()
 
