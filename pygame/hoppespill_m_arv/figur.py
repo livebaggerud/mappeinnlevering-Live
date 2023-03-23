@@ -63,7 +63,7 @@ while running:
 
     if frame == 400:
         frame = 0
-        nytt_hinder = Hinder(1200, 650, 90)
+        nytt_hinder = Hinder(1200, 650, 300)
         hindere.append(nytt_hinder)
 
     # fill the screen with a color to wipe away anything from last frame
