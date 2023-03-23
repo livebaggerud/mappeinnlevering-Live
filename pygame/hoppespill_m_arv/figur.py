@@ -12,6 +12,7 @@ class Hinder(Figur):
         super().__init__(x, y)
         self._fartY = fartY
         self._hoyde = randint(20,100)
+        self._y = 720 - self._hoyde
         self._bredde = 10
     
     def tegn(self, vindu):
@@ -29,10 +30,10 @@ class Spiller(Figur):
         pg.draw.circle(vindu, (100,50,140), (self._x, self._y), 25)
 
     def hopp(self):
-        self._y += 2
+        self._y -= 5
 
     def fall(self):
-        self._y -= 2
+        self._y += 1
 
     def er_over_hinder(self):
         pass
@@ -47,7 +48,7 @@ spiller = Spiller(30, 650, 50)
 hindere = []
 
 for i in range(3):
-    nytt_hinder = Hinder(90,90,90)
+    nytt_hinder = Hinder(1200,650,90)
     hindere.append(nytt_hinder)
 
 while running:
@@ -57,6 +58,9 @@ while running:
         if event.type == pg.QUIT:
             running = False
 
+
+    # fill the screen with a color to wipe away anything from last frame
+    screen.fill("purple")
     spiller.tegn(screen)
 
     for hinder in hindere:
@@ -64,14 +68,16 @@ while running:
         hinder.flytt_venstre()
         
 
-    # fill the screen with a color to wipe away anything from last frame
-    #screen.fill("purple")
+    
+    
 
     # LAG SPILLET DIT HER:
 
     keys = pg.key.get_pressed()
     if keys[pg.K_SPACE]:
         spiller.hopp()
+    
+    spiller.fall()
     
     # flip() the display to put your work on screen
     pg.display.flip()
