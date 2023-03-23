@@ -13,8 +13,10 @@ Flyt skjema er et verktøy som brukes for å planlegge programmer. Det gjør det
 I et flyt diagram viser diamanter valg progamet står ovenfor, og firkantene hvis hva som skjer. Pilene viser utfallet av valget, og hvor i programmet det fører oss.
 
 ### Eksempel
+#### Bruker flyt skjemaet
 [flyt.vaer.py](flyt-vaer.py)
 ![](flyt-vaer.png)
 
+#### Bruker flyt skjemaet
 [flyt.while.py](flyt.while.py)
 ![](flyt-while.png)

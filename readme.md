@@ -9,7 +9,7 @@
 - Problemløsnig 
     - Metoder, tekniker og vektøy
     - Alternativ løsniger
-    - Objekt orenterte progranner ned klasser, arv og objekter
+    - [Objekt orienterte programmer med klasser, arv og objekter](./Problemlosnig/klasser_arv_og_objekter.md)
 - Modellering og representasjon
     - [Objektorenterte modeller som beskriver programstruktur (UML)](./modellering_og_representasjon/objektorinentert.md)
     - [Represtasjon av programflyt med kontrollstruktur (flyt diagrammer)](./modellering_og_representasjon/objektorinentert.md)
