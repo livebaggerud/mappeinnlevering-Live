@@ -22,4 +22,4 @@
 
 
 ## Oppgaver
-[Plotting](./implimentering/Plotting.ipynb)
+[Plotting](./implimentering/plotting/Plotting.ipynb)
