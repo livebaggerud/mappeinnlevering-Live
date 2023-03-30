@@ -25,16 +25,17 @@ class Spiller(Figur):
     def __init__(self, x, y, fartX):
         super().__init__(x, y)
         self._fartX = fartX
+        self._radius = 25
 
     def tegn(self, vindu):
-        pg.draw.circle(vindu, (100,50,140), (self._x, self._y), 25)
+        pg.draw.circle(vindu, (100,50,140), (self._x, self._y), self._radius)
 
     def hopp(self):
         self._y -= 5
 
     def fall(self):
-        self._y += 0.5
-        
+        if self._y < 720 - self._radius:
+            self._y += 0.5
 
     def er_over_hinder(self):
         pass
